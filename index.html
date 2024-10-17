@@ -1,0 +1,133 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Curso de Javascript</title>
+    <link href="./css/tailwind.css" rel="stylesheet">  
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    
+
+ 
+
+
+<!-- Tabs -->
+<!--  uses radio buttons -->
+<section class="flex flex-row flex-wrap m-8 w-full">
+
+    <input id="tab-cero" type="radio" name="tabs" class="peer/tab-cero opacity-0 absolute" checked />
+    <label for="tab-cero" class="bg-slate-600 hover:bg-slate-700 peer-checked/tab-cero:bg-slate-800 cursor-default p-3 rounded-t-lg block uppercase text-sm">
+      Login
+    </label>
+
+    <input id="tab-one" type="radio" name="tabs" class="peer/tab-one opacity-0 absolute"/>
+    <label for="tab-one" class="bg-slate-600 hover:bg-slate-700 peer-checked/tab-one:bg-slate-800 cursor-default p-3 rounded-t-lg block uppercase text-sm hidden panel">
+      Agregar producto
+    </label>
+  
+    <input id="tab-two" type="radio" name="tabs" class="peer/tab-two opacity-0 absolute" />
+    <label for="tab-two" class="bg-slate-600 hover:bg-slate-700 peer-checked/tab-two:bg-slate-800 cursor-default p-3 rounded-t-lg block uppercase text-sm hidden panel">
+      Quitar producto
+    </label>
+  
+    <input id="tab-three" type="radio" name="tabs" class="peer/tab-three opacity-0 absolute" />
+    <label for="tab-three" class="bg-slate-600 hover:bg-slate-700 peer-checked/tab-three:bg-slate-800 cursor-default p-3 rounded-t-lg block uppercase text-sm hidden panel">
+      Ordenar productos
+    </label>
+  
+    <div class="basis-full h-0"></div>
+
+    <div class="bg-slate-800 hidden peer-checked/tab-cero:block p-4 w-full">
+      <div class="box log">
+          <h1 id="usuarioLogged">Ingrese usuario y contrasena</h1>
+          <form class="login">
+            <input type="text" id="user" placeholder="Usuario" value="">
+        
+            <input type="password" id="password" placeholder="Passwords" value="">
+              
+            <button id="btnLogin" class="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded">Login</button>
+            <button id="btnLogout" class="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded">Logout</button>
+        </form>
+       </div>
+    </div>
+
+  
+    <div class="bg-slate-800 hidden peer-checked/tab-one:block p-4 w-full">
+        <div class="box frm1">
+            <h1>Ingrese el nombre, precio y stock del articulo</h1>
+            
+            <input type="text" id="nombre" placeholder="Nombre" value="">
+        
+            <input type="text" id="precio" placeholder="Precio" value="">
+        
+            <input type="text" id="stock" placeholder="Stock" value="">
+        
+            <button id="btnAgregar" class="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded">Agregar producto</button>
+
+            <div class="msg"></div>
+         </div>
+    </div>
+
+    <div class="bg-slate-800 hidden peer-checked/tab-two:block p-4 w-full">
+      <div class="box">
+            <h1>Ingrese el nombre del articulo que quiere quitar de la lista</h1>
+            
+            <input type="text" id="nombreQuitar" placeholder="Nombre" value="">
+        
+            <button id="btnQuitar" class="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded">Quitar producto</button>
+         </div>
+    </div>
+
+    <div class="bg-slate-800 hidden peer-checked/tab-three:block p-4 w-full">
+        <div class="box frm1">
+          <h1>Seleccione como quiere ordenar los productos</h1>
+      
+          <button id="btnOrdenarAlfabeticamente" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">Ordenar Alfabeticamente</button>
+          <button id="btnOrdenarPorPrecio" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">Ordenar por Precio</button>
+
+          
+      </div>
+    </div>
+
+    <div id="msg"></div>
+  
+  </section>
+
+  
+
+  <div class="tabla hidden panel">
+    <div class="headings">
+      <span class='heading'>Nombre</span>
+      <span class='heading'>Precio</span>
+      <span class='heading'>Stock</span>
+      <span class='heading'>Subtotal</span>
+    </div>
+    <div id="resultado">
+   
+    </div>
+    
+  </div>
+
+ 
+  
+  
+  
+   
+
+
+
+ 
+  
+
+<script src="js/main.js"></script>
+</body>
+</html>

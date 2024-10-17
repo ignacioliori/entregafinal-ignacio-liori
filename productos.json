@@ -1,0 +1,47 @@
+[
+    {
+      "nombre": "Sillon",
+      "precio": 2500,
+      "stock":5
+    },
+    {
+      "nombre": "Silla nordica",
+      "precio": 3000,
+      "stock":3
+    },
+    {
+      "nombre": "Mesa de luz",
+      "precio": 4500,
+      "stock":20
+    },
+    {
+      "nombre": "Silla eames",
+      "precio": 2500,
+      "stock":6
+    },
+    {
+      "nombre": "Mesa ratona",
+      "precio": 3500,
+      "stock":5
+    },
+    {
+      "nombre": "Mesa de arrimo",
+      "precio": 5500,
+      "stock":7
+    },
+    {
+      "nombre": "Poltrona de cuero",
+      "precio": 9500,
+      "stock":28
+    },
+    {
+      "nombre": "Banqueta de corderito",
+      "precio": 1500,
+      "stock":58
+    },
+    {
+      "nombre": "Almoadon persa",
+      "precio": 7500,
+      "stock":52
+    }
+  ]
