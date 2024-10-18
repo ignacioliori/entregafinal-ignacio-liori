@@ -43,5 +43,10 @@
       "nombre": "Almoadon persa",
       "precio": 7500,
       "stock":52
+    },
+    {
+      "nombre": "Meson rustico",
+      "precio": 14500,
+      "stock":4
     }
   ]
